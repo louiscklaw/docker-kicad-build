@@ -1,0 +1,8 @@
+stages:
+  - lint
+
+lint-dockerfile:
+  type: lint
+  image: projectatomic/dockerfile-lint
+  script:
+    - dockerfile_lint -p Dockerfile
