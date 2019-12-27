@@ -2,7 +2,7 @@
 dist: bionic
 
 script:
-  - hostname
+  - docker build -t logickee/docker-kicad-build:latest .
 
 after_success:
   - cd _utils
